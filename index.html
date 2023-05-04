@@ -4,10 +4,70 @@
         <title>
             My Anime Recommendations
         </title>
+        <style>
+       
+    /* On screens that are 600px wide or less, the background color is olive */
+    @media screen and (max-width: 600px) {
+    body {
+        background-color: olive;
+        color: white;
+    }
+    }
+        
+            /* inline ul to make nav bar*/
+            li{
+                display : inline;
+            }
+            /* inline header and footer */
+            header{ text-align: center;
+
+            }
+            footer{ text-align: center;
+
+            }
+
+            /* flecbox width =20% each with green background */ 
+           
+            .flexbox1{
+                background-color: green;
+                width: 20%;
+                height: 500px;
+                padding-left: 10px;
+            }
+            .flexbox2{
+                background-color: red;
+                width: 20%;
+                height: 500px;
+                padding-left: 10px;
+            }
+            .flexbox3{
+                background-color: green;
+                width: 20%;
+                height: 500px;
+                padding-left: 10px;
+            }
+            .flexbox4{
+                background-color: red;
+                width: 20%;
+                height: 500px;
+                padding-left: 10px;
+            }
+            .flexbox5{
+                background-color: green;
+                width: 20%;
+                height: 500px;
+                padding-left: 10px;
+            }
+            /* make main 5 children divs inline */
+            .flex{
+                display: flex;
+
+            }
+        </style>
     </head>
     <body>
        <header>
-        <div>
+        <div class="flex">
             <img src="" alt="anime logo">
             <P>Top 5</P>
         </div>
@@ -31,26 +91,26 @@
             </ul>
         </nav>
        </header>
-       <main>
-            <div>
+       <main class="flex">
+            <div class="flexbox1">
                 <img src="" alt="Naruto Art">
-                <p></p>
+                <p>Naruto</p>
             </div>
-            <div>
+            <div class="flexbox2">
                 <img src="" alt="Dragonball Art">
-                <p></p>
+                <p>Dragonball</p>
             </div> 
-            <div>
+            <div class="flexbox3">
                 <img src="" alt="Bleach Art">
-                <p></p>
+                <p>Bleach</p>
             </div> 
-            <div>
+            <div class="flexbox4">
                 <img src="" alt="One Piece Art">
-                <p></p>
+                <p>One Piece</p>
             </div>
-            <div>
+            <div class="flexbox5">
                 <img src="" alt="Major Art">
-                <p></p>
+                <p>Major</p>
             </div>
        </main> 
        <footer>
